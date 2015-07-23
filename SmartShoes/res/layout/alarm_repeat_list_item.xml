@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+
+    <RelativeLayout
+        android:id="@+id/alarm_repeat_list_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+
+<!-- 
+        <ImageButton
+            android:id="@+id/alarm_repeat_list_check_btn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/ic_repeat_list_check"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/alarm_repeat_list_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="월요일"
+            android:textSize="20dp" />
+ -->
+
+        <CheckedTextView
+            android:id="@+id/alarm_repeat_list_checkedTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="left|center"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:text="월요일" />
+
+    </RelativeLayout>
+
+</LinearLayout>
